@@ -1,3 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container{
+    @apply flex flex-wrap flex-col  min-[500px]:w-[80%] w-[90%] left-[5%] top-[120px] relative min-[500px]:left-[10%] max-[444px]:justify-center justify-between
+  }
+  .cards-container {
+    @apply flex flex-wrap w-full max-[444px]:justify-center justify-between
+  }
+  .pagination-btns-container {
+    @apply flex flex-wrap justify-center mt-8 mb-8
+  }
+  .pagination-btn {
+    @apply w-[30px] h-[30px] bg-[#061148] rounded-lg mr-2 text-white
+  }
+  .course-details-container {
+    @apply flex flex-col max-lg:justify-center lg:flex-row flex-wrap min-[500px]:w-[80%] w-[90%] left-[5%] relative top-[120px] min-[500px]:left-[10%] max-[444px]:justify-center justify-between
+  }
+  .left-side-details {
+    @apply lg:w-[70%] w-[60%] max-lg:w-full
+  }
+  .course-name{
+    @apply font-['Courgette'] text-5xl font-light
+  }
+  .category{
+    @apply font-semibold w-[90%] text-[0.9rem] px-1 mt-1
+  }
+  .course-instructor {
+    @apply text-[2.4rem] font-bold my-4
+  }
+  .comments-container {
+    @apply flex justify-between flex-wrap
+  }
+  .instructor-jop-title {
+    @apply text-[1.4rem] mb-4 font-normal text-[#6a6f73]
+  }
+  .icons-container{
+    @apply flex items-center mb-1
+  }
+  .icon{
+    @apply relative mr-4
+  }
+  .inst-name {
+    @apply text-[#848484] font-['Courgette']
+  }
+  .comment-container {
+    @apply border-t border-t-[#d1d7dc] w-[40%] py-8 max-[806px]:w-[45%] max-[700px]:w-full
+  }
+  .card{
+    @apply flex flex-col w-[300px] relative mb-4 shadow-cardShadow rounded-xl
+  }
+  .heart-btn {
+    @apply absolute rounded-l-[50px] right-0 top-2 w-[40px] h-[40px] bg-[#f0f0f0]
+  }
+  .side-bar {
+    @apply flex flex-col lg:w-[25%] max-lg:mb-4 shadow-cardShadow  w-[35%] max-lg:w-full h-[540px]
+  }
+  .apply-button-style {
+    @apply border text-[#1c1d1f] border-[#1c1d1f] h-[4.8rem]
+  }
+  .nav-bar{
+    @apply bg-[#061148] h-[70px] w-full fixed z-10 shadow-cardShadow flex justify-between items-center px-8
+  }
+  .nav-title{
+    @apply text-white text-4xl first-letter:text-[#ffb400] first-letter:font-["Courgette"] w-full
+  }
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
